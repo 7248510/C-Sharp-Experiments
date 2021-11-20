@@ -5,9 +5,9 @@ public class test {
     {
         System.out.println("Calling test");
     }
-    public static void test2()
+    public void test2()
     {
-        System.out.println("Calling test2");
+        System.out.println("Calling test2 without the static keyword");
     }
 
 }
