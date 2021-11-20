@@ -1,7 +1,5 @@
 package com.company;
 
-
-
 public class Main {
     public static void callMainS()
     {
@@ -16,14 +14,11 @@ public class Main {
         test.testCall();
         test hello = new test(); //Really similar to C++ minus the new keyword
         //W3 schools states(paraphrasing) that the static keyword allows functions to be called without creating objects or ^
-
         hello.access();
         callMainS();
         //callMainNS(); //This function cannot be called due to it not being static. It needs an object
         Main getNS = new Main();
         getNS.callMainNS();
-
+        test.CallMe();
     }
 }
-
-
