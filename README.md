@@ -1,7 +1,7 @@
-# Java-experiments
-Experimenting with Java
+# C#-experiments
+Experimenting with C#
 
 ## Setup:
-* IDE = IntelliJ IDEA
-* Java = OpenJDK 16
-* Dependencies = Maven
+* IDE = Visual Studio 2022
+* C# 9
+* Dependencies = Nuget
