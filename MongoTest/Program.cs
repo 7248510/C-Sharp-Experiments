@@ -5,11 +5,16 @@ namespace MongoTest
 {
     internal class Program
     {
-
         static void Mongo()
         {
-            MongoClient dbClient = new MongoClient("mongodb://localhost:27017");
+            const string databaseConnection = "mongodb://localhost:27017";
+            MongoClient dbClient = new MongoClient(databaseConnection);
             var dbList = dbClient.ListDatabases().ToList();
+            /*
+             Below is the equivalent to the var key word
+            System.Collections.Generic.List<MongoDB.Bson.BsonDocument> bsonDocuments = dbClient.ListDatabases().ToList();
+            var dbList = bsonDocuments;
+            */
             Console.WriteLine("Amount of Mongo Databases: " + dbList.Count);
             Console.WriteLine("The list of databases on this server is: ");
             foreach (var db in dbList)
