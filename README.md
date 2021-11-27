@@ -1,4 +1,4 @@
-# OOP#-experiments
+# OOP-experiments
 Experimenting with C# and Java
 
 ## Setup:
